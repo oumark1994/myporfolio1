@@ -1,5 +1,6 @@
 import React,{useState,useEffect,useContext} from 'react'
 import {motion} from 'framer-motion'
+import FileSaver from 'file-saver';
 import './About.scss'
 import { images } from '../../constants'
 import { themeContext } from '../../Context'
@@ -8,6 +9,12 @@ import { themeContext } from '../../Context'
 const About = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+  const saveFile = () => {
+    FileSaver.saveAs(
+      process.env.REACT_APP_CLIENT_URL + "./myresume.pdf",
+      "myresume.pdf"
+    );
+  }
 
   return (
     <>
@@ -36,7 +43,10 @@ languages.Seeking to leverage broad development experience and hands-on technica
 Stack Developer</p>
     <motion.a  whileInView={{ opacity: 1 }}
             whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.5, type: 'tween' }}><a href='./myresume.pdf' id='cv' download>Download CV</a>
+            transition={{ duration: 0.5, type: 'tween' }}>
+            <button id="cv" onClick={saveFile}>Download CV</button>
+ 
+
 </motion.a>
           </motion.div>
        
