@@ -36,7 +36,7 @@ languages.Seeking to leverage broad development experience and hands-on technica
 Stack Developer</p>
     <motion.a  whileInView={{ opacity: 1 }}
             whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.5, type: 'tween' }}><a href='./myresume.pdf' id='cv' download>Download CV</a>
+            transition={{ duration: 0.5, type: 'tween' }}><a href='./myresume.pdf' className='cv' download>Download CV</a>
 </motion.a>
           </motion.div>
        
