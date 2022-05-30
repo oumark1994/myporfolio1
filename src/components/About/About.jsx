@@ -4,18 +4,12 @@ import FileSaver from 'file-saver';
 import './About.scss'
 import { images } from '../../constants'
 import { themeContext } from '../../Context'
-import DownloadLink from "react-download-link";
 
 
 const About = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
-  const saveFile = () => {
-    FileSaver.saveAs(
-      process.env.REACT_APP_CLIENT_URL + "./myresume.pdf",
-      "myresume.pdf"
-    );
-  }
+ 
 
   return (
     <>
@@ -45,13 +39,8 @@ Stack Developer</p>
     <motion.a  whileInView={{ opacity: 1 }}
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.5, type: 'tween' }}>
-            {/* <button id="cv" onClick={saveFile}>Download CV</button> */}
-            <DownloadLink
-            id="cv"
-    label="Download CV"
-    filename="myresume.pdf"
-    exportFile={() => "My cached data"}
-/>
+            <a href='./cv/myresume.pdf' target="_blank" download><button id='cv'>Download CV</button></a>
+      
  
 
 </motion.a>
