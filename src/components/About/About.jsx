@@ -4,6 +4,7 @@ import FileSaver from 'file-saver';
 import './About.scss'
 import { images } from '../../constants'
 import { themeContext } from '../../Context'
+import DownloadLink from "react-download-link";
 
 
 const About = () => {
@@ -44,7 +45,13 @@ Stack Developer</p>
     <motion.a  whileInView={{ opacity: 1 }}
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.5, type: 'tween' }}>
-            <button id="cv" onClick={saveFile}>Download CV</button>
+            {/* <button id="cv" onClick={saveFile}>Download CV</button> */}
+            <DownloadLink
+            id="cv"
+    label="Download CV"
+    filename="myresume.pdf"
+    exportFile={() => "My cached data"}
+/>
  
 
 </motion.a>
