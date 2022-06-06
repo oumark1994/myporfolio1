@@ -12,12 +12,12 @@ const Skills = () => {
   const darkMode = theme.state.darkMode;
   const [experiences, setExperiences] = useState([{year:'2019',works:[{name:'Junior Developer & Lecture',desc:'I worked at ipmc as Junior Developer and Assistant Lecture',company:'IPMC'}]},
   {year:'2020',works:[{name:'Full stack Developer',desc:'I worked at DevTeam as Fullstack developer',company:'DevTeam'}]},
-  {year:'2021',works:[{name:'CEO & Full stack Developer',desc:'I am working as Full stack developer and CEO of Chadotec ipmc',company:'CHADOTEC'}]}
+  {year:'2021',works:[{name:'CEO & Full stack Developer',desc:'I am the CEO and Full stack developer and  at Chadotec',company:'CHADOTEC'}]}
 ]);
   const [skills, setSkills] = useState([{name:'Javascript',icon:images.javascript},{name:'Html/Css',icon:images.htmlcss},
-  {name:'Python',icon:images.python},{name:'Java',icon:images.java},{name:'Git',icon:images.git},{name:'Php',icon:images.php},{name:'Ajax',icon:images.ajax},{name:'Laravel',icon:images.laravel},
-  {name:'Django',icon:images.django},{name:'Mysql',icon:images.mysql},{name:'MongoDB',icon:images.mongo},{name:'C#',icon:images.csharp},{name:'Git',icon:images.git},{name:'Php',icon:images.php},
-  {name:'Wordpress',icon:images.wordpress},{name:'Vue',icon:images.vue},{name:'React',icon:images.react}
+  {name:'Python',icon:images.python},{name:'Java',icon:images.java},{name:'Git',icon:images.git},{name:'Laravel',icon:images.laravel},
+  {name:'Django',icon:images.django},{name:'Mysql',icon:images.mysql},{name:'MongoDB',icon:images.mongo},{name:'Git',icon:images.git},{name:'Php',icon:images.php},
+  {name:'Wordpress',icon:images.wordpress},{name:'React',icon:images.react}
 ]);
 
   useEffect(() => {

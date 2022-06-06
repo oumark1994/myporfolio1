@@ -15,9 +15,11 @@ const Work = () => {
         {title:'Agency',description:'I build this complete digital agency from scratch using PHP/LARAVEL FRAMEWORK.',project_Link:"https://www.chadotec.com",imgUrl:images.code4,tags:['Agency','ALL']},
         {title:'Sneakers',description:'Sneaker is complete ecommerce website that shows all kinds of sneakers for sell online',project_Link:"https://www.mysneakers.chadotec.com",imgUrl:images.sneaker,tags:['Ecommerce','ALL']},
         {title:'Real State',description:'Realty is a complete react state apps that shows all properties available for sell or rent around the globe',project_Link:"https://real-g3f6d2o3x-oumark1994.vercel.app/",imgUrl:images.realstate,tags:['Real State','ALL']},
-        {title:'Restaurent',description:'A Restaurent website site where foods staffs are sold over.',project_Link:"http://www.myfoods.chadotec.com",imgUrl:images.foody,tags:['Restaurent','ALL']},
-{title:'MyPorfolio',description:'This is a complete portfolio website that i build to show case and my skills and services i provide.',project_Link:"http://www.myfoods.chadotec.com",imgUrl:images.myporfolio,tags:['Portfolio','ALL']}
-]);
+        {title:'Restaurent',description:'A Restaurent website site where foods staffs are sold over using laravel framework.',project_Link:"http://www.myfoods.chadotec.com",imgUrl:images.foody,tags:['Restaurent','ALL']},
+        {title:'MyPorfolio',description:'This is a complete portfolio website that i build to show case and my skills and services i provide using reactjs.',project_Link:"http://www.myfoods.chadotec.com",imgUrl:images.myporfolio,tags:['Portfolio','ALL']},
+        {title:'Dashboard',description:'I build this complete dashboard using react js library and material ui.',project_Link:"https://mydashboard-zeta.vercel.app/",imgUrl:images.dashboard,tags:['Dashboard','ALL']},
+        {title:'Movie',description:'This is a complete movie  app that shows latest movie and trends built using react js ,material ui and rapid api.',project_Link:"https://entertainement.vercel.app/",imgUrl:images.movie,tags:['Movie','ALL']}
+      ]);
 
     const [filterWork, setFilterWork] = useState([]);
     const [activeFilter, setActiveFilter] = useState('All');
@@ -49,7 +51,7 @@ const handleWorkFilter = (item) => {
       <div className="app__work-filter">
       <h2 className="head-text"  style={{display:'block',width:'100%',color:darkMode?"#fff":""}}>My Latest  <span>Featured Projects</span></h2>
 
-        {['All','Real State','Portfolio', 'Ecommerce', 'Restaurent', 'Agency'].map((item, index) => (
+        {['All','Real State','Portfolio', 'Ecommerce','Movie','Restaurent', 'Agency','Dashboard'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}

@@ -27,20 +27,13 @@ import code4 from '../assets/code4.jpg';
 import foody from '../assets/foody.PNG';
 import realstate from '../assets/realstate.PNG';
 import sneaker from '../assets/sneaker.PNG';
-
-
-
-
-
+import movie from '../assets/movie.PNG';
 import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
 import about03 from '../assets/about03.png';
 import about04 from '../assets/about04.png';
-
-import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
-
 import adidas from '../assets/adidas.png';
 import amazon from '../assets/amazon.png';
 import asus from '../assets/asus.png';
@@ -68,24 +61,8 @@ import laravel from '../assets/laravel.jfif';
 import mongo from '../assets/mongo.png';
 import mysql from '../assets/mysql.jfif';
 import php from '../assets/php.png';
+import dashboard from "../assets/dashboard.PNG";
 import wordpress from '../assets/wordpress.jfif';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -100,6 +77,7 @@ export default {
   mobile,
   api,
   cpp,
+  dashboard,
   css,
   myporfolio,
   figma,
@@ -109,6 +87,7 @@ export default {
   html,
   web1,
   web2,
+  movie,
   code4,
   sneaker,
   foody,
@@ -138,7 +117,6 @@ export default {
   java,
   wordpress,
   django,
-
   php,
   mysql,
   mongo,
@@ -150,7 +128,6 @@ export default {
   about02,
   about03,
   about04,
-  profile,
   circle,
   logo,
   adidas,
